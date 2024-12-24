@@ -36,3 +36,23 @@ When developing programs, I focus on iterative development, starting with a basi
 **What does it mean to be a good team member in software development?**
 
 Being a good team member in software development means being reliable, communicative, and collaborative. It involves actively participating in team meetings, sharing knowledge, and supporting others to overcome challenges. It’s also about being open to feedback, contributing to a positive team culture, and working together towards common goals. Good team members are adaptable and always willing to help the team succeed.
+
+
+  
+
+## DriverPass Project Summary  
+The DriverPass project focused on designing a system to help a client streamline scheduling driving lessons, accessing practice tests, and tracking student progress. The client wanted an intuitive, user-friendly system that simplified these processes for both students and staff while integrating with external systems like the DMV.  
+
+## Strengths in My Work  
+I feel I did particularly well in breaking down the system requirements into clear diagrams, ensuring every function and interaction was accounted for. This made it easier to understand how the system would operate from start to finish.  
+
+## Potential Improvements  
+If I could revise one part of my work, it would be the activity diagram. I would make it more detailed by including edge cases to ensure it accounted for all possible scenarios, like what happens if a user cancels or reschedules a lesson.  
+
+## Interpreting User Needs  
+I focused on understanding the client’s primary goals and their users’ pain points, like simplifying scheduling and progress tracking. Considering user needs is vital because the success of the system depends on its usability and whether it solves the client’s problems effectively.  
+
+## Future Approach to System Design  
+Moving forward, I would continue using techniques like UML diagrams and focus more on gathering feedback early in the design process. This would help me validate ideas and create a system that aligns closely with user needs.
+
+
