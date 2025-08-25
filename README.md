@@ -47,3 +47,21 @@ The program will prompt for the CSV filename and then display a menu with option
 ├── RuntimeAnalysis.docx       # Pseudocode + run‑time / memory study
 └── README.md                  # You are here
 ```
+
+
+
+
+
+
+README – CS330 Final Project
+
+
+Reflection on My Design Approach
+When I first started designing this project, I approached it like building something in layers. I wanted to get the basic shapes and layout in place first, then add details like lighting, textures, and camera movement. This step-by-step approach helped me stay organized instead of getting overwhelmed. One new design skill I developed was figuring out how to make small objects (like the basketball rim or table) feel part of a larger, believable scene. I realized that design isn’t just about making things look good—it’s about making them work together as a whole.
+For my design process, I focused on testing ideas quickly. I would sketch out what I wanted, try it in code, and then refine it based on how it actually looked in the scene. This type of iteration gave me confidence that I could make steady progress instead of expecting everything to be perfect on the first try. These tactics—breaking big goals into smaller steps and testing frequently—are ones I know I can use in future courses and professional projects.
+Reflection on My Development Approach
+When it came to programming, I leaned on iteration even more. I would code a feature, run the program, see how it behaved, then go back and tweak it. This was especially true with lighting and collision logic. I also learned new strategies like modularizing my code so different pieces (objects, lighting, shaders) were easier to manage. Over the milestones, I definitely became more comfortable with debugging and reading error messages, which made the final project feel like a natural completion of everything I had been practicing.
+My approach to development evolved a lot during this course. At first, I was just trying to get the code to compile. By the end, I was thinking about design choices, readability, and performance. That shift is something I’ll carry forward in future projects.
+Computer Science and My Goals
+Working on computational graphics has given me both technical and creative skills. From an educational standpoint, I now have hands-on experience with OpenGL, transformations, lighting, and collision detection—things that looked intimidating at first but now make sense after working through them. Professionally, I can see how these skills connect to areas like simulation, visualization, and even game development. Even if I don’t end up working in graphics directly, the problem-solving approach I practiced here applies to any software development role.
+Overall, this project showed me how computer science isn’t just about solving technical problems—it can also be a way to express ideas visually. That combination of creativity and logic is exactly why I want to keep pushing forward in this field.
