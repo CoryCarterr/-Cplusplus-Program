@@ -1,3 +1,32 @@
+
+Mobile App Development – Weight Tracking App (Project Three)
+
+App Requirements and Goals
+The app I developed is a Weight Tracking App designed to help users monitor their daily weight progress toward a personal fitness goal. The primary user needs addressed include easy weight entry, visual progress feedback, and a clean, simple navigation structure to avoid overwhelming the user. By allowing users to track and reflect on their progress over time, the app supports healthy habit-building and personal goal motivation.
+
+User-Centered Screens and Features
+The main screens include:
+Login Screen – secure access
+Dashboard/Home Screen – displays current goal and recent tracking data
+Daily Weight Entry Screen – quick input and confirmation
+Progress View (Grid/List or Chart) – lets users visually review weight changes
+During design, I followed Android design principles like large touch targets, consistent placement of navigation elements, and simple forms. The UI was successful because it reduced friction—users can add or view their weight in just a few taps.
+Development Approach
+
+I broke the development into manageable tasks: UI first, then data handling and interactions. I used incremental coding and testing after each feature to keep bugs small and easy to track. Additionally, organizing layouts and logic into separate components helped me maintain clean and readable code. This approach will definitely help in future projects, especially when adding new features or troubleshooting.
+Testing for Functionality
+
+To ensure functionality, I tested each screen individually and then tested navigation flows end-to-end. Input validation, screen orientation checks, and emulator/device testing helped catch issues early. Testing is essential because it reveals user experience problems and prevents errors from moving into later development stages where they are harder to fix.
+Overcoming Challenges
+
+One challenge I faced was aligning UI elements correctly across different screen sizes. I overcame it by using Android’s constraint layout system and checking multiple emulator sizes to confirm responsiveness. Another challenge was ensuring data flowed properly from screen to screen, which I solved by reviewing lifecycle methods and debugging step-by-step.
+Strongest Component
+
+I am particularly proud of how the progress display feature turned out. It demonstrates my understanding of layouts, user-friendly design, and data handling. It also shows my ability to create a feature that is both functional and motivational for the end user.
+
+
+
+
 # ABCU Course Planner Portfolio
 
 This repository contains two artifacts that demonstrate my skills in data structures and algorithms:
