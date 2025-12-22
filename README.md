@@ -1,4 +1,18 @@
 
+12/21/25
+
+Pirate Intelligent Agent Project Reflection
+Project Overview
+In this project, I worked with a Jupyter Notebook that implemented a pirate intelligent agent using reinforcement learning. The starter code provided the environment setup, game logic, and structure needed to train an agent to navigate a grid and find treasure while avoiding obstacles. My work focused on completing and modifying the reinforcement learning components, including defining the state representation, action selection, reward handling, and training loop. I implemented and tuned a Deep Q-Learning approach using a neural network to help the agent learn optimal behavior over time through trial and error.
+Connection to Computer Science
+This project helped me better understand how reinforcement learning and neural networks are used to solve real-world problems in computer science. Computer scientists design, build, and improve systems that can process information, make decisions, and adapt over time. This matters because many modern technologies, such as autonomous systems, recommendation engines, and game AI, rely on these concepts. Through this project, I saw how abstract ideas like rewards, policies, and exploration can translate into intelligent behavior in a working system.
+Problem-Solving Approach
+As a computer scientist, I approach problems by breaking them down into smaller, manageable parts. In this project, that meant understanding the environment, defining how the agent perceives the world, choosing an appropriate learning strategy, and iterating on the solution through testing and adjustment. When the agent did not perform well, I analyzed training output, adjusted parameters like epsilon and learning rate, and reran experiments. This iterative process reinforced the importance of testing, debugging, and refining solutions based on evidence.
+Ethical Responsibilities
+This course also highlighted my ethical responsibilities as a developer. When creating intelligent systems, it is important to consider how decisions are made, how data is used, and how users may be affected. For this project, that means recognizing that reinforcement learning systems can develop unintended behaviors if rewards are poorly designed. In real-world applications, developers must prioritize transparency, fairness, and user safety while also meeting organizational goals. Responsible AI design helps build trust and ensures that technology benefits users rather than causing harm.
+
+
+
 Mobile App Development – Weight Tracking App (Project Three)
 
 App Requirements and Goals
