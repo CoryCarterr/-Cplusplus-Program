@@ -1,3 +1,162 @@
+02/24/26
+# Raspberry Pi Embedded Thermostat Project
+
+## Project Overview
+
+This project represents the complete development of a Raspberry Pi–based embedded thermostat system built progressively from the ground up. Rather than starting with a finished design, this system was developed step-by-step throughout the course, beginning with basic GPIO wiring and expanding into a fully integrated multi-peripheral embedded system.
+
+The final product integrates:
+
+- GPIO digital output
+- PWM LED control
+- GPIO interrupt-driven buttons
+- 16x2 LCD display
+- I2C temperature sensor
+- UART serial communication
+- State machine architecture
+- Multithreaded display management
+
+This project demonstrates full embedded systems integration on a Linux-based ARM platform.
+
+---
+
+# Development Progression
+
+## Phase 1 – Basic GPIO & LED Control
+
+The project began with basic GPIO configuration on the Raspberry Pi.  
+
+- Wired a single LED with a resistor to GPIO.
+- Configured digital output using Python.
+- Verified correct HIGH/LOW output behavior.
+- Implemented PWM to fade the LED.
+
+This phase introduced:
+- GPIO pin numbering (BCM vs BOARD)
+- Hardware wiring fundamentals
+- Pulse Width Modulation concepts
+
+---
+
+## Phase 2 – LCD Display Integration
+
+Next, a 16x2 character LCD was added.
+
+- Wired 6 digital GPIO lines for RS, EN, D4–D7.
+- Initialized LCD using `digitalio` and `adafruit_character_lcd`.
+- Printed static messages.
+- Implemented screen clearing and dynamic updates.
+
+This phase reinforced:
+- Parallel digital communication
+- Hardware abstraction libraries
+- Output device control
+
+---
+
+## Phase 3 – Temperature Sensor (I2C)
+
+An AHTx0 temperature and humidity sensor was integrated via I2C.
+
+- Initialized I2C bus using `board.I2C()`
+- Communicated with sensor using Adafruit library
+- Retrieved temperature data
+- Converted Celsius to Fahrenheit
+
+This introduced:
+- I2C peripheral communication
+- Serial bus protocols
+- Data conversion logic
+
+---
+
+## Phase 4 – Dual LED State Indicators
+
+Two LEDs were implemented to represent thermostat state:
+
+- Red LED (Heating)
+- Blue LED (Cooling)
+
+Each LED uses PWM:
+- Fade effect when actively heating/cooling
+- Solid when temperature target reached
+
+This demonstrated:
+- Conditional hardware behavior
+- PWM as visual system feedback
+- Multi-output coordination
+
+---
+
+## Phase 5 – Button Interrupt Integration
+
+Three push buttons were added:
+
+- GPIO24 – Cycle thermostat state
+- GPIO25 – Increase setpoint
+- GPIO21 – Decrease setpoint
+
+Buttons were configured using interrupt-based detection via `gpiozero.Button`.
+
+This improved:
+- Event-driven programming
+- Interrupt handling
+- User interaction design
+
+---
+
+## Phase 6 – State Machine Architecture
+
+The thermostat was restructured using a formal state machine.
+
+States:
+- OFF
+- HEAT
+- COOL
+
+Transitions:
+- Cycle button rotates between states
+
+State behavior:
+
+OFF:
+- All LEDs off
+
+HEAT:
+- If temperature < setpoint → Red LED fades
+- Else → Red LED solid
+
+COOL:
+- If temperature > setpoint → Blue LED fades
+- Else → Blue LED solid
+
+This phase introduced:
+- Structured system logic
+- Deterministic state transitions
+- Clean separation of responsibilities
+
+---
+
+## Phase 7 – UART Communication
+
+The thermostat sends status updates every 30 seconds via UART:
+
+
+Lessons Learned
+This project reinforced the importance of:
+Proper wiring and hardware debugging
+Understanding pin numbering systems
+Separating hardware logic from state logic
+Using event-driven programming instead of polling
+Designing modular, maintainable embedded code
+Building this system progressively from individual components into a fully integrated thermostat strengthened my understanding of real-world embedded systems architecture.
+
+
+
+
+-------------------------------------------------------------------
+
+
 
 12/21/25
 
