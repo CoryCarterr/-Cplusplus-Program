@@ -1,3 +1,199 @@
+
+02/28/26
+
+CS-350 Module Eight Portfolio Submission (Journal)
+Selected Artifacts (2)
+
+16x2 LCD Wiring + Display Bring-Up (Hardware + Interface Code)
+Artifact shows my ability to correctly wire a parallel LCD (RS/EN/D4–D7) and initialize/display messages using Python libraries (digitalio, adafruit_character_lcd). 
+
+README (1)
+
+Raspberry Pi Embedded Thermostat (Integrated System Project)
+Artifact shows a complete embedded system that combines GPIO output, PWM LEDs, interrupt-driven buttons, LCD output, I2C sensor input, and a state machine architecture. 
+
+README (1)
+
+Summary: What problem did this project solve?
+
+This project solved the problem of building a working embedded thermostat on a Raspberry Pi by integrating multiple hardware peripherals and coordinating them through software. The thermostat reads temperature data from a sensor, displays information on the LCD, accepts user input from buttons, and visually indicates heating/cooling behavior using LEDs and PWM effects. 
+
+README (1)
+
+What did I do particularly well?
+
+I did well at building the system progressively and validating each component step-by-step (GPIO → PWM → LCD → I2C sensor → buttons → state machine). This approach helped me isolate issues faster (especially wiring and pin numbering) and prevented one bug from breaking the entire project. 
+
+README (1)
+
+Where could I improve?
+
+I could improve by adding more formal testing and logging, especially for hardware events (button presses, state changes, sensor read failures). I would also improve documentation by including a wiring diagram image and a short “troubleshooting” section (common pin mistakes, LCD contrast issues, etc.). (These are improvements beyond what’s currently written in the README.)
+
+Tools and/or resources added to my support network
+
+From this project, I added practical tools and resources that I can reuse in future embedded work:
+
+Raspberry Pi GPIO + PWM development workflow
+
+Adafruit CircuitPython libraries for LCD and sensors
+
+Event-driven button handling (gpiozero.Button)
+
+State machine structure for clean control logic 
+
+README (1)
+
+Transferable skills to other projects / coursework
+
+The most transferable skills are:
+
+Hardware/software integration (wiring + debugging + code)
+
+Understanding communication methods (GPIO + I2C)
+
+Event-driven programming using interrupts instead of constant polling 
+
+README (1)
+
+Designing systems using a state machine to keep behavior predictable and organized 
+
+README (1)
+
+How did I make it maintainable, readable, and adaptable?
+
+I structured the project into clear phases and used separation of responsibilities (inputs like buttons/sensor, outputs like LCD/LEDs, and control logic in the thermostat state machine). This keeps the code easier to update (for example: adding a new “AUTO” mode later, changing the sensor type, or adjusting how often UART/LCD updates occur). 
+
+README (1)
+
+If you want, paste your file names for the two artifacts (example: lcd_wiring_notes.md, thermostat.py, etc.) and I’ll add a clean Repository Contents block under that section so it matches what’s actually in your GitHub.
+
+Sources
+projectreflect (1).docx
+Document
+Thermostat.py
+Python
+Thought for 6s
+
+Perfect — I can use the two files you uploaded as your two portfolio artifacts:
+
+Thermostat working code: Thermostat.py 
+
+Thermostat
+
+Final project reflection: projectreflect (1).docx 
+
+projectreflect (1)
+
+And I’ll also explicitly tie in your LCD wiring/bring-up using the exact GPIO pin mapping from your code (RS/EN/D4–D7). 
+
+Thermostat
+
+Below is a clean README section you can paste into your repo (I’d place it near the top, under your Project Overview).
+
+CS 350 Module Eight Journal – Portfolio Submission
+Selected Artifacts
+
+LCD Wiring + Display Bring-Up (16x2 LCD over GPIO)
+
+I successfully wired and initialized a 16x2 LCD using GPIO and the digitalio + adafruit_character_lcd libraries. The LCD uses RS=GPIO17, EN=GPIO27, and data pins D4=GPIO5, D5=GPIO6, D6=GPIO13, D7=GPIO26. 
+
+Thermostat
+
+This artifact demonstrates hands-on hardware integration and correctly mapping physical wiring to software pin configuration.
+
+Thermostat Final Project (Full Embedded System Integration)
+
+I designed and implemented a working thermostat on a Raspberry Pi using a state machine with three modes: OFF, HEAT, COOL. 
+
+projectreflect (1)
+
+The system integrates:
+
+I2C sensor (AHTx0) for temperature readings 
+
+projectreflect (1)
+
+LCD output for time/temp/state display 
+
+projectreflect (1)
+
+Interrupt-driven buttons using gpiozero 
+
+projectreflect (1)
+
+PWM LEDs to visually show active heating/cooling behavior 
+
+projectreflect (1)
+
+UART serial output to send periodic status updates 
+
+projectreflect (1)
+
+Project Summary (What problem was it solving?)
+
+This project solved the problem of building a complete embedded thermostat that can read real sensor data, respond to button input, present output on a 16x2 LCD, and indicate heating/cooling behavior with LEDs. The system combines multiple peripherals into one working application controlled by a clear state machine design. 
+
+projectreflect (1)
+
+What did I do particularly well?
+
+I integrated multiple peripherals successfully (GPIO, PWM LEDs, LCD, I2C sensor, UART) and used an interrupt-driven approach for buttons, which improved responsiveness and avoided constant polling. 
+
+projectreflect (1)
+
+Where could I improve?
+
+I could improve by adding more structured testing and debugging support (example: clearer error handling for sensor/UART failures, and adding logs that summarize state changes and readings). I would also add a wiring diagram image in the repository to make hardware setup faster for someone reproducing the build.
+
+Tools/resources added to my support network
+
+This project strengthened my support toolkit for embedded work:
+
+Adafruit CircuitPython sensor libraries (AHTx0) 
+
+projectreflect (1)
+
+gpiozero for interrupt-style button handling 
+
+projectreflect (1)
+
+LCD libraries (digitalio, adafruit_character_lcd) 
+
+projectreflect (1)
+
+UART serial configuration and formatting for device-to-device output 
+
+projectreflect (1)
+
+Transferable skills
+
+The most transferable skills from this project are embedded hardware/software integration, state machine architecture, interrupt-driven inputs, peripheral communication (I2C + UART), and writing modular code that can be expanded into larger IoT-style systems. 
+
+projectreflect (1)
+
+Maintainability / readability / adaptability
+
+I made the project maintainable by organizing functionality into clear responsibilities (display handling, temperature reading, state machine logic, output control). The state machine structure keeps the behavior predictable and makes it easier to add future modes or swap sensors without rewriting the whole program. 
+
+projectreflect (1)
+
+Repository Files (Artifacts)
+
+Thermostat.py — Final working thermostat program 
+
+Thermostat
+
+projectreflect (1).docx — Final project reflection write-up 
+
+projectreflect (1)
+
+
+
+
+
+
+
 02/24/26
 # Raspberry Pi Embedded Thermostat Project
 
